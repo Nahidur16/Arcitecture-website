@@ -16,3 +16,11 @@ scrollBtn.addEventListener("click", () => {
     html.style.scrollBehavior = "unset";
   }, 1000);
 });
+
+// Custom loader
+window.onload = () => {
+  setTimeout(() => {
+    let body = document.querySelector("body");
+    body.classList.add("display");
+  }, 4000);
+};
